@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Só Contatos: bloqueie ligações de números desconhecidos no Android</title>
+<meta name="description" content="App para Android que bloqueia em silêncio ligações de quem não está na sua agenda: telemarketing, golpes e spam. Sem anúncios, sem internet, pague uma vez.">
+<link rel="canonical" href="https://andreocunha.github.io/so-contatos/">
+<link rel="icon" href="img/favicon.png">
+<meta name="theme-color" content="#1E8E3E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Só Contatos: só quem está na sua agenda consegue te ligar">
+<meta property="og:description" content="Bloqueia em silêncio ligações de números desconhecidos, telemarketing e golpes. App para Android.">
+<meta property="og:url" content="https://andreocunha.github.io/so-contatos/">
+<meta property="og:image" content="https://andreocunha.github.io/so-contatos/img/destaque.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Só Contatos",
+  "alternateName": "Só Contatos: Bloqueia Ligações",
+  "description": "Bloqueia em silêncio as ligações de quem não está na sua agenda.",
+  "applicationCategory": "CommunicationApplication",
+  "operatingSystem": "Android 10 ou mais recente",
+  "inLanguage": "pt-BR",
+  "image": "https://andreocunha.github.io/so-contatos/img/icone.png",
+  "url": "https://andreocunha.github.io/so-contatos/",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.andre.bloqueio",
+  "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "BRL" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Como bloquear ligações de números desconhecidos no Android?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Instale o Só Contatos, toque em Configurar agora e escolha o app como app de identificação de chamadas e spam. A partir daí, só os números salvos na sua agenda fazem o celular tocar."}},
+    {"@type": "Question", "name": "A pessoa bloqueada percebe que foi bloqueada?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Não. A ligação é recusada como se você estivesse ocupado ou sem sinal. Seu celular não toca, não vibra e não mostra notificação."}},
+    {"@type": "Question", "name": "E se for uma emergência de um número que não está na agenda?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Ative a opção Deixar passar quem insiste: se o mesmo número ligar 2 vezes em 3 minutos, a segunda ligação toca normalmente."}},
+    {"@type": "Question", "name": "O app envia meus contatos para algum lugar?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Não. O Só Contatos não tem acesso à internet. A agenda é consultada só no próprio celular e nada é enviado."}},
+    {"@type": "Question", "name": "Funciona em quais celulares?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Em qualquer celular Android 10 ou mais recente, como Samsung, Motorola, Xiaomi e outros."}},
+    {"@type": "Question", "name": "É assinatura?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Não. Você paga uma vez na Google Play e usa para sempre, sem anúncios."}}
+  ]
+}
+</script>
+<style>
+:root{--bg:#F4F5F7;--surface:#fff;--text:#15171A;--text2:#5B616B;--line:#E5E7EB;--green:#1E8E3E;--green-soft:#E6F4EA;--red:#D93025}
+@media (prefers-color-scheme:dark){:root{--bg:#0E1013;--surface:#1A1D21;--text:#ECEEF1;--text2:#9AA0A8;--line:#2A2E34;--green:#5BC27E;--green-soft:#18291E;--red:#F28B82}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--green)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.hero{background:linear-gradient(135deg,#27A653,#136B2E);color:#fff;padding:56px 0 64px}
+.hero .wrap{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.hero .txt{flex:1 1 380px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:20px;margin-bottom:28px}
+.brand img{width:44px;height:44px;border-radius:12px}
+h1{font-size:clamp(32px,6vw,48px);line-height:1.12;margin:0 0 16px;letter-spacing:-.02em}
+.hero p{font-size:19px;opacity:.95;margin:0 0 28px;max-width:34em}
+.btn{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#136B2E;font-weight:700;text-decoration:none;padding:14px 24px;border-radius:14px;font-size:17px}
+.btn small{font-weight:500;opacity:.75}
+.note{font-size:14px;opacity:.85;margin-top:12px}
+.shots{flex:0 1 300px;display:flex;justify-content:center}
+.shots img{width:100%;max-width:280px;border-radius:28px;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+section{padding:56px 0}
+h2{font-size:28px;margin:0 0 24px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--text2);font-size:15.5px}
+.dot{width:40px;height:40px;border-radius:50%;background:var(--green-soft);color:var(--green);display:grid;place-items:center;font-weight:700;margin-bottom:14px}
+ol.steps{padding-left:22px;margin:0}
+ol.steps li{margin-bottom:10px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--text2);margin:10px 0 0}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--text2);font-size:15px}
+footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="txt">
+      <div class="brand"><img src="img/icone.png" alt="" width="44" height="44">Só Contatos</div>
+      <h1>Bloqueie ligações de números desconhecidos</h1>
+      <p>Telemarketing, golpes e spam param de tocar. Só quem está na sua agenda consegue te ligar. As outras ligações são recusadas em silêncio.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.andre.bloqueio">Baixar na Google Play <small>R$ 4,99</small></a>
+      <div class="note">Pague uma vez. Sem anúncios, sem assinatura. Android 10 ou mais recente.</div>
+    </div>
+    <div class="shots"><img src="img/tela.png" alt="Tela do app Só Contatos mostrando a proteção ativa e o histórico de ligações bloqueadas" width="280" height="630"></div>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>Seu celular só toca para quem importa</h2>
+    <div class="grid">
+      <div class="card"><div class="dot">1</div><h3>Silêncio total</h3><p>Ligações de fora da agenda não tocam, não vibram e não geram notificação.</p></div>
+      <div class="card"><div class="dot">2</div><h3>Histórico com busca</h3><p>Veja quem tentou ligar, procure por nome ou número e ligue de volta se quiser.</p></div>
+      <div class="card"><div class="dot">3</div><h3>Emergências passam</h3><p>Opção para deixar tocar quando o mesmo número liga 2 vezes em 3 minutos.</p></div>
+      <div class="card"><div class="dot">4</div><h3>Privacidade</h3><p>O app não tem acesso à internet. Seus contatos nunca saem do celular.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Como bloquear ligações de desconhecidos no Android</h2>
+    <ol class="steps">
+      <li>Baixe o Só Contatos na Google Play.</li>
+      <li>Abra o app e toque em <strong>Configurar agora</strong>.</li>
+      <li>Permita o acesso aos contatos e escolha o Só Contatos como app de identificação de chamadas e spam.</li>
+      <li>Pronto: a partir de agora só os números salvos na agenda fazem o celular tocar.</li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>A pessoa bloqueada percebe que foi bloqueada?</summary><p>Não. A ligação é recusada como se você estivesse ocupado ou sem sinal. Seu celular não toca, não vibra e não mostra notificação.</p></details>
+    <details><summary>E se for uma emergência de um número que não está na agenda?</summary><p>Ative a opção "Deixar passar quem insiste": se o mesmo número ligar 2 vezes em 3 minutos, a segunda ligação toca normalmente.</p></details>
+    <details><summary>Dá para bloquear número oculto ou privado?</summary><p>Sim. Essa opção já vem ligada e pode ser desativada nos Ajustes do app.</p></details>
+    <details><summary>O app envia meus contatos para algum lugar?</summary><p>Não. O Só Contatos não tem acesso à internet. A agenda é consultada só no próprio celular e nada é enviado. Veja a <a href="privacidade.html">política de privacidade</a>.</p></details>
+    <details><summary>Funciona em quais celulares?</summary><p>Em qualquer celular Android 10 ou mais recente, como Samsung, Motorola, Xiaomi e outros.</p></details>
+    <details><summary>É assinatura?</summary><p>Não. Você paga uma vez na Google Play e usa para sempre, sem anúncios.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Só Contatos</span>
+    <a href="privacidade.html">Política de privacidade</a>
+  </div>
+</footer>
+</body>
+</html>
